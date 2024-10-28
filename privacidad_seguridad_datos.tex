@@ -1,0 +1,44 @@
+\section{Privacidad y Seguridad de Datos en Blockchain}
+
+La blockchain, por su naturaleza descentralizada y criptográficamente segura, ofrece un entorno robusto para el almacenamiento y gestión de datos. Sin embargo, es esencial comprender cómo se abordan los aspectos de privacidad y seguridad en este contexto para aplicaciones de ingeniería.
+
+\subsection{Almacenamiento Descentralizado}
+
+Las DWebs utilizan sistemas de almacenamiento distribuidos como IPFS o Swarm, que fragmentan y distribuyen los datos a través de una red de nodos. Esto aumenta la redundancia y disponibilidad de la información, a la vez que elimina puntos únicos de fallo.
+
+\subsection{Criptografía Avanzada}
+
+La protección de datos en blockchain se basa en técnicas criptográficas como:
+
+\begin{itemize}
+    \item \textbf{Funciones Hash}: Garantizan la integridad de los datos mediante resúmenes criptográficos.
+    \item \textbf{Cifrado Asimétrico}: Utiliza pares de claves pública y privada para asegurar que solo el destinatario previsto puede leer los datos.
+    \item \textbf{Firmas Digitales}: Permiten verificar la autenticidad y no repudio de las transacciones.
+\end{itemize}
+
+\subsection{Privacidad de Transacciones}
+
+Aunque las transacciones en blockchain son transparentes, existen soluciones para preservar la privacidad, como:
+
+\begin{itemize}
+    \item \textbf{Direcciones Descartables}: Utilizar una nueva dirección para cada transacción reduce la trazabilidad.
+    \item \textbf{Transacciones Confidenciales}: Protocolos como \textit{Confidential Transactions} en Monero u \textit{zk-SNARKs} en Zcash permiten ocultar los montos y participantes de las transacciones.
+    \item \textbf{Redes de Segunda Capa}: Lightning Network en Bitcoin o State Channels en Ethereum permiten transacciones privadas fuera de la cadena principal.
+\end{itemize}
+
+\subsection{Control de Acceso}
+
+Los contratos inteligentes pueden implementar mecanismos de control de acceso sofisticados. Por ejemplo, se pueden definir roles y permisos, y utilizar \textit{Access Control Lists} (ACL) descentralizadas para gestionar quién puede interactuar con ciertos datos o funciones.
+
+\subsection{Desafíos y Consideraciones}
+
+A pesar de los avances, existen desafíos técnicos:
+
+\begin{itemize}
+    \item \textbf{Escalabilidad}: El almacenamiento de grandes volúmenes de datos en blockchain es ineficiente y costoso.
+    \item \textbf{Inmutabilidad}: Una vez que los datos se escriben en la blockchain, no se pueden modificar, lo que plantea problemas en el cumplimiento de regulaciones como GDPR.
+    \item \textbf{Anonimato vs. Responsabilidad}: Equilibrar la privacidad de los usuarios con la necesidad de prevenir actividades ilícitas es un reto continuo.
+\end{itemize}
+
+Desde una perspectiva de ingeniería, es crucial diseñar sistemas que aprovechen las fortalezas de la blockchain mientras se mitigan sus limitaciones, posiblemente mediante arquitecturas híbridas que combinan blockchain con bases de datos tradicionales y soluciones off-chain.
+

@@ -1,0 +1,29 @@
+\section{Autenticación a través de Wallets}
+
+La autenticación tradicional en aplicaciones web generalmente involucra nombres de usuario y contraseñas, almacenadas y gestionadas por servidores centralizados. Este enfoque presenta múltiples vulnerabilidades, como el riesgo de ataques de fuerza bruta, phishing y violaciones de bases de datos. En el contexto de las DWebs, se ha adoptado el uso de wallets criptográficas como mecanismo de autenticación.
+
+Las wallets, como MetaMask o WalletConnect, funcionan como interfaces que permiten a los usuarios interactuar con la blockchain. Desde una perspectiva técnica, estas wallets gestionan claves privadas que permiten firmar transacciones y autenticarse de forma segura. Al utilizar criptografía de clave pública, se asegura que solo el propietario de la clave privada puede realizar acciones en su nombre.
+
+La Figura~\ref{fig:wallet_authentication} muestra el flujo de autenticación utilizando una wallet en una DWeb.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{wallet_authentication.png}
+    \caption{Flujo de Autenticación mediante Wallet en una DWeb}
+    \label{fig:wallet_authentication}
+\end{figure}
+
+Los beneficios técnicos de este método incluyen:
+
+\begin{itemize}
+    \item \textbf{Seguridad Mejorada}: Al no transmitir ni almacenar contraseñas, se elimina un vector común de ataques.
+    \item \textbf{Privacidad}: Los usuarios no necesitan proporcionar información personal para autenticarse.
+    \item \textbf{Descentralización}: No depende de servidores centrales para la gestión de credenciales.
+\end{itemize}
+
+Desde el punto de vista de la ingeniería, la integración de wallets en aplicaciones web requiere el uso de APIs y bibliotecas específicas. Por ejemplo, MetaMask proporciona una API de JavaScript que permite a las aplicaciones web solicitar firmas de transacciones y acceso a la información de la cuenta.
+
+Además, se utilizan estándares como EIP-4361 (Sign-In with Ethereum) que definen protocolos para la autenticación de usuarios mediante firmas criptográficas, asegurando interoperabilidad y buenas prácticas en el desarrollo.
+
+Es importante considerar aspectos como la experiencia del usuario (UX), ya que la interacción con wallets puede ser compleja para usuarios no técnicos. Se deben diseñar interfaces intuitivas y educar a los usuarios sobre las prácticas de seguridad.
+
