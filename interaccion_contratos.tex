@@ -4,11 +4,11 @@ Los contratos inteligentes son programas autoejecutables que se ejecutan en la b
 
 \subsection{Arquitectura de Interacción}
 
-La interacción con contratos inteligentes desde el frontend implica una arquitectura cliente que se comunica directamente con la blockchain, sin la necesidad de servidores intermedios \cite{mavridou2018tool}. Los componentes clave de esta arquitectura incluyen:
+La interacción con contratos inteligentes desde el frontend implica una arquitectura cliente que se comunica directamente con la blockchain, sin la necesidad de servidores intermedios. Los componentes clave de esta arquitectura incluyen:
 
 \begin{itemize}
     \item \textbf{Proveedor de Blockchain (Provider)}: Interfaz que permite al frontend conectarse a la red blockchain. Puede ser un nodo local, un servicio de terceros como Infura \cite{infura}, o la wallet del usuario.
-    \item \textbf{Wallet del Usuario}: Gestiona las claves privadas y firma las transacciones. Las wallets modernas como MetaMask inyectan un objeto \texttt{window.ethereum} en el navegador \cite{metamaskdocs}.
+    \item \textbf{Wallet del Usuario}: Gestiona las claves privadas y firma las transacciones. Las wallets modernas como MetaMask inyectan un objeto \texttt{window.ethereum} en el navegador \cite{metamask}.
     \item \textbf{Librerías de Interacción}: Herramientas como Web3.js \cite{web3js}, Ethers.js \cite{ethersjs} o web3.py para interactuar con los contratos inteligentes.
     \item \textbf{ABI (Application Binary Interface)}: Define la interfaz del contrato inteligente, incluyendo sus funciones y eventos \cite{soliditydocs}.
 \end{itemize}
@@ -116,13 +116,13 @@ Existen diversas herramientas y frameworks que facilitan el desarrollo y la inte
 Algunos casos de uso comunes de la interacción con contratos inteligentes desde el frontend incluyen:
 
 \begin{itemize}
-    \item \textbf{Aplicaciones DeFi}: Plataformas de finanzas descentralizadas como intercambios, préstamos y yield farming \cite{werner2021sok}.
+    \item \textbf{Aplicaciones DeFi}: Plataformas de finanzas descentralizadas como intercambios, préstamos y yield farming.
 
-    \item \textbf{NFT Marketplaces}: Mercados para la compra y venta de tokens no fungibles \cite{wang2021non}.
+    \item \textbf{NFT Marketplaces}: Mercados para la compra y venta de tokens no fungibles.
 
-    \item \textbf{Juegos Blockchain}: Juegos que utilizan activos en la blockchain y permiten a los usuarios poseer y comerciar elementos del juego \cite{nfts2020}.
+    \item \textbf{Juegos Blockchain}: Juegos que utilizan activos en la blockchain y permiten a los usuarios poseer y comerciar elementos del juego.
 
-    \item \textbf{Sistemas de Votación Descentralizada}: Aplicaciones que permiten votaciones transparentes y seguras \cite{zhang2019survey}.
+    \item \textbf{Sistemas de Votación Descentralizada}: Aplicaciones que permiten votaciones transparentes y seguras.
 
 \end{itemize}
 
@@ -135,7 +135,7 @@ A pesar de las ventajas, existen desafíos técnicos en la interacción con cont
 
     \item \textbf{Cambios en el Estado de la Red}: Las bifurcaciones (forks) y actualizaciones de la red pueden afectar la funcionalidad de las aplicaciones \cite{gudgeon2020defi}.
 
-    \item \textbf{Compatibilidad con Múltiples Redes}: Soportar diferentes redes (Ethereum, Binance Smart Chain, Polygon) requiere manejo de configuraciones específicas \cite{wu2021defi}.
+    \item \textbf{Compatibilidad con Múltiples Redes}: Soportar diferentes redes (Ethereum, Binance Smart Chain, Polygon) requiere manejo de configuraciones específicas.
 
     \item \textbf{Seguridad de Contratos Inteligentes}: Bugs y vulnerabilidades en los contratos pueden llevar a pérdidas financieras. Auditorías y buenas prácticas de desarrollo son esenciales \cite{atzei2017survey}.
 
@@ -148,11 +148,11 @@ Para desarrollar aplicaciones robustas que interactúan con contratos inteligent
 \begin{itemize}
     \item \textbf{Modularidad}: Separar la lógica de negocio, la interacción con la blockchain y la interfaz de usuario.
 
-    \item \textbf{Testing Extensivo}: Utilizar frameworks de prueba para contratos inteligentes y realizar pruebas unitarias y de integración \cite{mavridou2019verisolid}.
+    \item \textbf{Testing Extensivo}: Utilizar frameworks de prueba para contratos inteligentes y realizar pruebas unitarias y de integración.
 
     \item \textbf{Documentación y Comentarios}: Mantener un código bien documentado facilita el mantenimiento y la colaboración.
 
-    \item \textbf{Actualizaciones y Migraciones}: Planificar cómo manejar actualizaciones de contratos y migraciones de datos \cite{dannen2017introducing}.
+    \item \textbf{Actualizaciones y Migraciones}: Planificar cómo manejar actualizaciones de contratos y migraciones de datos.
 
 \end{itemize}
 
@@ -161,10 +161,10 @@ Para desarrollar aplicaciones robustas que interactúan con contratos inteligent
 El desarrollo en este campo está evolucionando rápidamente:
 
 \begin{itemize}
-    \item \textbf{Integración con WebAssembly (WASM)}: Posibilidad de escribir contratos en otros lenguajes y mejorar el rendimiento \cite{wood2019polkadot}.
+    \item \textbf{Integración con WebAssembly (WASM)}: Posibilidad de escribir contratos en otros lenguajes y mejorar el rendimiento.
 
-    \item \textbf{Desarrollo de DApps Móviles}: Llevar la interacción con contratos inteligentes a dispositivos móviles \cite{he2018blockchain}.
+    \item \textbf{Desarrollo de DApps Móviles}: Llevar la interacción con contratos inteligentes a dispositivos móviles.
 
-    \item \textbf{Interoperabilidad entre Blockchains}: Protocolos que permiten la comunicación entre diferentes blockchains \cite{belchior2021survey}.
+    \item \textbf{Interoperabilidad entre Blockchains}: Protocolos que permiten la comunicación entre diferentes blockchains.
 
 \end{itemize}
