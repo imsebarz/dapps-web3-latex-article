@@ -1,0 +1,34 @@
+\section{Retos Técnicos de la Autenticación Descentralizada}
+
+Aunque la autenticación descentralizada ofrece numerosos beneficios, presenta desafíos significativos que deben abordarse para una adopción masiva \cite{tschorsch2016bitcoin}. Uno de los principales retos es la \textbf{usabilidad}; para usuarios no familiarizados con la tecnología blockchain, el uso de wallets y claves privadas puede ser complejo y confuso \cite{parizi2018empirical}.
+
+\subsection{Gestión de Claves Privadas}
+
+La responsabilidad de gestionar las claves privadas recae directamente en el usuario. La pérdida o el compromiso de estas claves puede resultar en la pérdida irreversible de activos y acceso a servicios \cite{eskandari2018first}. Las soluciones técnicas para mitigar este riesgo incluyen:
+
+\begin{itemize}
+    \item \textbf{Mecanismos de recuperación de claves}: Utilizando técnicas como Shamir's Secret Sharing o servicios de recuperación basados en confianza social \cite{shamir1979share}.
+    \item \textbf{Hardware wallets}: Dispositivos físicos que almacenan las claves privadas de forma segura y protegen contra malware \cite{palatinus2013trezor}.
+    \item \textbf{Multi-firma y autenticación de múltiples factores}: Requieren múltiples claves o factores para autorizar transacciones, aumentando la seguridad \cite{kosba2016hawk}.
+\end{itemize}
+
+\subsection{Escalabilidad y Rendimiento}
+
+Las limitaciones en el rendimiento de la red blockchain pueden afectar la experiencia del usuario, especialmente en aplicaciones que requieren interacciones en tiempo real \cite{croman2016scaling}. Las soluciones técnicas incluyen:
+
+\begin{itemize}
+    \item \textbf{Cadenas laterales (sidechains)}: Permiten transacciones más rápidas y económicas al operar en una cadena separada conectada a la mainnet \cite{back2014enabling}.
+    \item \textbf{Protocolos de capa dos}: Como Lightning Network o Plasma, que manejan transacciones fuera de la cadena principal \cite{poon2016bitcoin, pundit2017plasma}.
+    \item \textbf{Optimización de contratos inteligentes}: Escribir código eficiente y optimizado para reducir costos de gas y tiempos de ejecución \cite{antonopoulos2018mastering}.
+\end{itemize}
+
+\subsection{Interoperabilidad y Estándares}
+
+La falta de estándares unificados dificulta la interoperabilidad entre diferentes wallets, plataformas y protocolos \cite{hardjono2019blockchain}. Es esencial desarrollar y adoptar estándares abiertos como ERC-20, ERC-721 y DID \cite{eip20, eip721, w3cdid}.
+
+\subsection{Educación y Adopción del Usuario}
+
+La complejidad técnica de las soluciones descentralizadas puede ser una barrera para la adopción masiva \cite{parizi2018empirical}. Es necesario invertir en educación y crear interfaces de usuario intuitivas que oculten la complejidad subyacente \cite{robinson2019user}.
+
+Desde la perspectiva de la ingeniería, abordar estos desafíos requiere un enfoque multidisciplinario que combine criptografía, seguridad informática, diseño de experiencia de usuario y conocimiento de sistemas distribuidos \cite{tschorsch2016bitcoin}.
+

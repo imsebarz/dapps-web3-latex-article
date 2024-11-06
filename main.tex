@@ -1,30 +1,68 @@
 \documentclass[10pt,twocolumn]{article}
+
+% Paquetes
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage{amsmath, amssymb}
-\usepackage{float}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{xcolor}
+% Paquetes adicionales
+\usepackage{listings}
+\usepackage{xcolor}
 
+% Definir el lenguaje JavaScript para listings
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete,
+    do, else, finally, for, function, if, in, instanceof, new, return,
+    switch, this, throw, try, typeof, var, let, const, void, while, with, await, async},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{blue}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  sensitive=true
+}
+
+% Configuración del paquete listings
+\lstset{
+    language=JavaScript,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{gray},
+    showstringspaces=false,
+    columns=flexible,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2,
+    frame=single
+}
+
+% Título y autor
 \title{Interacción Usuario-Blockchain en las Páginas Web Descentralizadas: Autenticación, Privacidad y Control de Datos}
-\author{Tu Nombre}
-\date{\today}
+\author{Sebastian Ruiz Palacio}
+\date{}
 
 \begin{document}
 
 \maketitle
 
-\begin{abstract}
-En este artículo se explora cómo las páginas web descentralizadas están transformando la interacción del usuario con la blockchain, enfocándose en aspectos de autenticación, privacidad y control de datos. Se analizan los avances en Identidad Descentralizada, el uso de wallets para autenticación, la seguridad de datos en blockchain, la interacción con contratos inteligentes desde el frontend, los retos técnicos presentes y el futuro del control de datos personales en Web3.
-\end{abstract}
-
 \input{introduccion}
 \input{descentralizacion_identidad}
 \input{autenticacion_wallets}
-\input{privacidad_seguridad_datos}
-\input{interaccion_contratos_inteligentes}
-\input{retos_autenticacion_descentralizada}
-\input{futuro_control_datos_web3}
+\input{privacidad_seguridad}
+\input{interaccion_contratos}
+\input{retos_tecnicos}
+\input{futuro_control_datos}
 \input{conclusion}
 
 \bibliographystyle{plain}

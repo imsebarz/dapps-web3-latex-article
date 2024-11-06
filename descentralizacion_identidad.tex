@@ -1,21 +1,12 @@
 \section{Descentralización y Control de Identidad}
 
-La \textit{Identidad Descentralizada} (DID) es un concepto emergente que busca proporcionar a los individuos control total sobre sus identidades digitales. A diferencia de los sistemas tradicionales de identidad, que dependen de autoridades centrales como gobiernos o corporaciones, los DID se basan en tecnologías de blockchain para ofrecer identificadores únicos y verificables sin intermediarios.
+La Identidad Descentralizada (DID) es un nuevo enfoque para la gestión de identidades que permite a los usuarios tener control total sobre sus datos personales \cite{w3cdid}. Las DID son identificadores únicos que se crean y controlan de forma autónoma, sin depender de autoridades centrales o proveedores de identidad \cite{preukschat2020self}. Esto se logra mediante el uso de criptografía de clave pública y tecnologías de contabilidad distribuida (DLT) \cite{allen2017decentralized}.
 
-Desde una perspectiva técnica, los DID utilizan criptografía de clave pública para asegurar que solo el propietario legítimo puede acceder y controlar su identidad. Los identificadores se almacenan en la blockchain, lo que garantiza su inmutabilidad y disponibilidad. Los documentos de identidad asociados a un DID incluyen información como claves públicas, métodos de autenticación y metadatos que permiten interacciones seguras.
+Desde una perspectiva técnica, una DID se representa como una URI (Uniform Resource Identifier) que puede resolver a documentos de identidad descentralizados (DID Documents) \cite{sporny2019did}. Estos documentos contienen las claves públicas y la información de servicio necesaria para interactuar con la identidad. La verificación de identidades se realiza mediante pruebas criptográficas, como firmas digitales y pruebas de conocimiento cero \cite{baldimtsi2013anonymous}.
 
-En el ámbito de la ingeniería, la implementación de DID implica el desarrollo de protocolos y estándares que faciliten la interoperabilidad entre diferentes sistemas y plataformas. Organizaciones como el W3C han propuesto especificaciones para estandarizar los DID, permitiendo su integración en diversas aplicaciones.
+La implementación de DID en las DWebs está cambiando la forma en que los usuarios acceden e interactúan con aplicaciones descentralizadas (dApps), eliminando la necesidad de intermediarios y reduciendo los riesgos de seguridad asociados con los sistemas centralizados \cite{tozny2017decentralized}. Por ejemplo, en lugar de utilizar nombres de usuario y contraseñas almacenados en servidores, los usuarios pueden autenticarse firmando desafíos criptográficos con sus claves privadas \cite{rivest1978method}.
 
-La utilización de DID en DWebs permite a los usuarios autenticarse y acceder a servicios sin revelar información personal sensible, reduciendo el riesgo de violaciones de datos y ataques de phishing. Además, facilita la creación de sistemas de confianza distribuidos, donde la identidad y las credenciales pueden verificarse sin necesidad de una autoridad central.
+Además, las DID permiten la interoperabilidad entre diferentes sistemas y plataformas, facilitando la portabilidad de la identidad y los datos asociados \cite{reed2016dkms}. Esto es especialmente relevante en entornos empresariales y gubernamentales, donde la gestión de identidades es crítica para la seguridad y el cumplimiento normativo \cite{cameron2005laws}.
 
-La Figura~\ref{fig:DID_architecture} ilustra la arquitectura general de un sistema de Identidad Descentralizada, destacando los componentes clave y las interacciones entre ellos.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.45\textwidth]{did_architecture.png}
-    \caption{Arquitectura de un Sistema de Identidad Descentralizada}
-    \label{fig:DID_architecture}
-\end{figure}
-
-Los desafíos técnicos incluyen la gestión de claves, la recuperación de identidades en caso de pérdida de claves privadas y la escalabilidad de los sistemas de blockchain utilizados. Soluciones como el uso de \textit{Hierarchical Deterministic Wallets} (HD Wallets) y esquemas de recuperación social están siendo exploradas para mitigar estos problemas.
+Sin embargo, la adopción de DID plantea desafíos en términos de escalabilidad, estandarización y usabilidad. La resolución de DID puede ser costosa en términos computacionales y requiere infraestructura de soporte adecuada \cite{paul2018blockchain}. Asimismo, es necesario desarrollar interfaces de usuario intuitivas que permitan a los usuarios gestionar sus identidades de manera segura y sencilla.
 
